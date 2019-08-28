@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuật toán vòng lặp</title>
+</head>
+<body>
+    <script>
+    function find() {
+        let arr
+        let  x= document.getElementById('text_Id').value;
+        arr =x.split(',');
+        let max=arr[0];
+        for(let i=0; i<arr.length; i=i+1){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+        document.write(max);
+
+    }
+    </script>
+    <input type="text" id="text_Id">
+<button type="button" onclick="find()">click</button>
+</body>
+</html>
