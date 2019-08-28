@@ -10,13 +10,13 @@
         let arr
         let  x= document.getElementById('text_Id').value;
         arr =x.split(',');
-        let max=arr[0];
+        let max= Number(arr[0]);
         for(let i=0; i<arr.length; i=i+1){
-            if(max<arr[i]){
-                max=arr[i];
+            if(max<Number(arr[i])){
+                max=Number(arr[i]);
             }
         }
-        document.write(max);
+        alert("so lon nhat la :" + max);
 
     }
     </script>
